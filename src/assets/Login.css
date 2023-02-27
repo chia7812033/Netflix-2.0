@@ -1,0 +1,112 @@
+.login {
+}
+
+.login__background {
+  position: relative;
+  height: 100vh;
+  background: url("https://repository-images.githubusercontent.com/299409710/b42f7780-0fe1-11eb-8460-e459acd20fb4")
+    center no-repeat;
+  background-size: cover;
+}
+
+.login__logo {
+  position: fixed;
+  top: 12px;
+  left: 0;
+  width: 120px;
+  object-fit: contain;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.login__signIn {
+  position: fixed;
+  top: 12px;
+  right: 30px;
+  color: white;
+  background-color: #e50914;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: none;
+}
+
+.login__gradient {
+  background-image: linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  height: 100vh;
+  z-index: 1;
+}
+
+.login__body {
+  position: absolute;
+  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+}
+
+.login__body > h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+
+.login__body > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.login__body > h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.login__input {
+  display: flex;
+  justify-content: center;
+}
+
+.login__input > form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+.login__input > form > input {
+  height: 3rem;
+  border: none;
+  outline: none;
+  min-width: 400px;
+  max-width: 600px;
+  border-radius: 3px;
+  padding-left: 10px;
+
+}
+
+.login__getStarted {
+  background-color: #E50914;
+  color: white;
+  border: none;
+  outline: none;
+  height: 3rem;
+  border-radius: 3px;
+  padding: 0 15px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  max-width: 140px;
+  margin-top: 20px;
+  cursor: pointer;
+}
