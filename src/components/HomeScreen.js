@@ -1,7 +1,7 @@
 import "../assets/HomeScreen.css";
 
-import Banner from "./Banner";
-import Navbar from "./Navbar";
+import Banner from "../components/Banner";
+import Navbar from "../components/Navbar";
 import React from "react";
 import Row from "./Row"
 import requests from "../helpers/Requests";

@@ -2,7 +2,12 @@ import "../assets/Navbar.css";
 
 import React, { useEffect, useState } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 function Navbar() {
+  const navigate = useNavigate();
+
+
   const [show, setShow] = useState(false);
 
   const transitionNavbar = () => {
@@ -15,19 +20,21 @@ function Navbar() {
 
   useEffect(() => {
     window.addEventListener("scroll", transitionNavbar);
-    return () => window.removeEventListener('scroll', transitionNavbar)
+    return () => window.removeEventListener("scroll", transitionNavbar);
   }, []);
 
   return (
     <div className={`navbar ${show && "navbar__black"}`}>
       <div className='navbar__contents'>
         <img
+          onClick={() => navigate("/")}
           className='navbar__logo'
           src='https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png'
           alt='netlfix-logo'
         />
 
         <img
+          onClick={() => navigate("/profile")}
           className='navbar__avatar'
           src='https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png'
           alt='avatar'
